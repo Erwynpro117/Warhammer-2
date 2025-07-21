@@ -1,0 +1,22 @@
+/* 
+Estilos globales
+
+Aqui vamos a definir estilos y variables que se reutilizen en todo el sitio.
+
+*/
+
+:root {
+    --primary-color: #173151;
+    --secondary-color: #7B1817;
+    --dark-color: #1E1E1E;
+
+    --font-primary: 'Radio Canada';
+
+    --space-small:16px;
+    --space-normal: 
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
