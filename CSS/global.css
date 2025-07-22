@@ -13,7 +13,7 @@ Aqui vamos a definir estilos y variables que se reutilizen en todo el sitio.
     --font-primary: 'Radio Canada';
 
     --space-small:16px;
-    --space-normal: 
+    --space-normal: 32px;
 }
 
 body {

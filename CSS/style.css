@@ -17,4 +17,41 @@
     display: flex;
 }
 
-.
+.navbar-menu a {
+    font-family: var();
+    text-transform: uppercase;
+}
+
+.hero {
+    height: 100vh;
+    min-height: 700px;
+    background-image: url(../assets/hero\ background.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-color);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content {
+    font-size: 1.125rem;
+    margin-bottom: var(--space-normal);
+    max-width: 80%;
+}
+
+.hero-actions {
+    display:flex ;
+    gap: var(--space-small);
+    margin-bottom: var(--space-medium);
+}
+
+.hero-icons {
+    display: flex;
+    gap: var(--space-small);
+}
