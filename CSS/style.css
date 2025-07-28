@@ -1,34 +1,49 @@
+/* 
+    Estilos Personalizados
+
+    Aquí vamos a estilizar todas las secciones, sus contenidos y el responsivo.
+
+*/  
+
+/* Header */
+
 .header {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
-    background-color: var(--primary-color);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var();
+    padding: 24px;
 }
 
 .navbar-menu {
     display: flex;
+    gap: var(--space-medium)
 }
 
-.navbar-menu a {
-    font-family: var();
-    text-transform: uppercase;
+.navbar-menu a{
+    font-family: var(--title-font);
 }
+
+.navbar-menu a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* Hero */
 
 .hero {
     height: 100vh;
     min-height: 700px;
-    background-image: url(../assets/hero\ background.png);
+    background-image: url('../assets/hero\ background.png');
     background-size: cover;
     background-position: center;
-    color: var(--primary-color);
+    color: var(--light-color);
 
     display: flex;
     justify-content: flex-end;
@@ -39,14 +54,14 @@
     width: 50%;
 }
 
-.hero-content {
-    font-size: 1.125rem;
-    margin-bottom: var(--space-normal);
+.hero-content p {
+    font-size: 1.125rem;;
+    margin-bottom: var(--space-medium);
     max-width: 80%;
 }
 
 .hero-actions {
-    display:flex ;
+    display: flex;
     gap: var(--space-small);
     margin-bottom: var(--space-medium);
 }
@@ -54,4 +69,48 @@
 .hero-icons {
     display: flex;
     gap: var(--space-small);
+}
+
+.characters {
+background-color: gray;
+}
+
+.characters-header {
+    margin-bottom: 1rem;
+
+}
+
+.charaters-content {
+    display: flex;
+}
+
+.characters-thumbnails {
+    width: 50%;
+
+}
+
+.characters-showcase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: var(--space-medium);
+}
+
+.thumbnails-item {
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+}
+
+.thumbnails-item:hover {
+    filter: brightness(1);
+}
+
+.thumbnail-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--space-medium);
 }
