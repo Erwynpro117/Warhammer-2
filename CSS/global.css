@@ -46,6 +46,10 @@ h3 {
     cursor: pointer;
 }
 
+section {
+    margin-bottom: var(--space-medium);
+}
+
 .button-primary {
     display: flex;
     align-items: center;
