@@ -10,13 +10,23 @@ Aqui vamos a definir estilos y variables que se reutilizen en todo el sitio.
     --secondary-color: #7B1817;
     --dark-color: #1E1E1E;
 
+    --dark-color-transparent: #16182734;
+
     --font-primary: 'Radio Canada';
 
     --space-small: 16px;
     --space-normal: 24px;
     --space-medium: 32px;
+    --space-large: 48px;
+    --space-xl: 54px;
+    --space-2xl: 64px;
+
+    --offset-height: 120px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--light-color);
@@ -47,6 +57,7 @@ h3 {
 }
 
 section {
+    scroll-margin-top: var(--offset-height);
     margin-bottom: var(--space-medium);
 }
 
