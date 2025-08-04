@@ -142,6 +142,8 @@ background-color: gray;
 .carousel-item img {
     width: 100%;
     height: auto;
+    filter: brightness(0.6);
+    transition: filter 0.3 ease;
 }
 
 .carousel-item span {
@@ -153,6 +155,10 @@ background-color: gray;
     color: var(--light-color);
 }
 
+.carousel-item:hover {
+
+}
+
 .carousel-controls {
     display: flex;
     justify-content: center;
@@ -160,6 +166,10 @@ background-color: gray;
 
 .carousel-controls button {
     color: var(--dark-color);
+}
+
+.carousel-controls button:hover {
+    color: var(--secondary-color);
 }
 
 .carousel-controls span {
